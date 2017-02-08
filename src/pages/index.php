@@ -53,4 +53,22 @@ echo "<br>";
         if ($user[$x] == "Shrek") continue;
             printf ($user[$x]); 
     }
+
+    $a = '1';
+    $b = &$a;
+    $b = "2$b";
+    echo $a.", ".$b;
+
+    class Animal
+{
+    public $name = "No-name animal";
+    
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+}
+
+$animal = new Animal("Bob the Dog");
+echo $animal->name;
 ?>
