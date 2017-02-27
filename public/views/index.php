@@ -1,33 +1,44 @@
 <?php 
 require('header.php'); 
 ?>
+<div class="container">
+<div class="panel">
 <h1>test</h1>
 <form action="../controller/functions/functions.php" method="POST">
+<div class="form-group">
 <label>name:</label>
 <input type="text" name="name">
-
+</div>
+<div class="form-group">
 <label>password:</label>
 <input type="password" name="password">
-
+</div>
+<div class="form-group">
 <label>email:</label>
 <input type="email" name="email">
-
+</div>
 <input type="submit" name="createuser">	
 </form>
+</div>
+</div>
 
 <hr>
+<div class="container">
+<div class="panel">
 <h2>User login</h2>
-<form action="../functions/functions.php" method="POST">
-
+<form action="../../controller/functions/functions.php" method="POST">
+<div class="form-group">
 <label>email:</label>
 <input type="email" name="email">
-
+</div>
+<div class="form-group">
 <label>password:</label>
 <input type="password" name="password">
-
-
-<input type="submit" name="userlog">	
+</div>
+<button type="submit" name="userlog" class="btn btn-default">LogIn</button>	
 </form>
+</div>
+</div>
 <?php require('footer.php'); ?>
 <?php 
     
