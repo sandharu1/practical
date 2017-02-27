@@ -1,5 +1,8 @@
+<?php 
+require('header.php'); 
+?>
 <h1>test</h1>
-<form action="../functions/functions.php" method="POST">
+<form action="../controller/functions/functions.php" method="POST">
 <label>name:</label>
 <input type="text" name="name">
 
@@ -25,7 +28,7 @@
 
 <input type="submit" name="userlog">	
 </form>
-
+<?php require('footer.php'); ?>
 <?php 
     
     $color = "maroon";
@@ -58,7 +61,9 @@ echo "<br>";
     $b = &$a;
     $b = "2$b";
     echo $a.", ".$b;
-
+    echo "<br>";
+echo "----------";
+echo "<br>";
     class Animal
 {
     public $name = "No-name animal";
@@ -66,9 +71,16 @@ echo "<br>";
     public function __construct($name)
     {
         $this->name = $name;
+        var_dump($this);
     }
 }
 
 $animal = new Animal("Bob the Dog");
 echo $animal->name;
+echo "<br>";
+echo "----------";
+$name = 'sandharu1';
+unset($name);
+var_dump($name);
+
 ?>
